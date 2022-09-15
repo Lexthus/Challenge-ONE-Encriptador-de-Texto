@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="/assets/logo-encabezado.ico" <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <title>Encriptador</title>
+</head>
+
+<body>
+
+  <div class="caja-logo">
+    <div class="logo">
+      <div class="logo-alura">
+        <img src="/assets/logoalura-latam.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="caja-izquierda">
+    <div class="encriptador">
+      <div class="contenedor">
+        <div class="mensaje">
+          <textarea class="input-texto" cols="19" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+        </div>
+        <div class="botones-encriptar-desencriptar">
+          <div class="contenedor">
+            <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+          </div>
+        </div>
+        <h6 class="informacion">&#128712 Solo letras minúsculas y sin acentos.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="caja-derecha">
+    <div class="resultado">
+      <div class="contenedor-inverso">
+        <div class="boton-copiar">
+          <button class="copiar" onclick="copiar()">Copiar</button>
+        </div>
+        <div class="texto-respuesta">
+          <textarea class="respuesta" cols="19" rows="6" placeholder="Aquí se mostrará el resultado"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="caja-autor">
+    <div class="autor">
+      <div class="contenedor">
+        <h6 class="nombre-autor">Alex Pereyra</h6>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
